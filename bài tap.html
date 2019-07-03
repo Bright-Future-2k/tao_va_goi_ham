@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ask_play_game</title>
+</head>
+<body>
+<script>
+    function hoivui(answer) {
+        let traLoi = "";
+        if (answer){
+            traLoi = "we play chess.";
+        } else {
+            traLoi = "may be next time.";
+        }
+        return traLoi;
+    }
+    let talk = confirm("do you want to play ?");
+    let a = hoivui(talk);
+    alert(a)
+</script>
+</body>
+</html>
